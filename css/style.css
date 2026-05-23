@@ -345,7 +345,7 @@ main {
     padding: 110px;
     background: linear-gradient(rgba(7, 12, 17, 0.8),
     rgba(15,23,42,0.8)),
-    url('img/infos.png') center/cover fixed;
+    url('../img/infos.png') center/cover fixed;
     color: rgb(255, 255, 255);
 }
 
