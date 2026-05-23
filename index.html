@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSchool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+
+            <a href="#" class="logo">
+                <img src="./img/logo.png" width="150px">
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#cursos" class="nav-link">Categorias</a></li>
+                    <li><a href="#numeros" class="nav-link">Sobre</a></li>
+                    <li><a href="#eventos" class="nav-link">Records</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#contato" class="btn btn-primary d-none-mobile">Cadastre-se</a>
+                <button class="icon-btn menu-btn" id="menu-btn" aria-label="Abrir Menu"></button>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <!--Banner Rotativo Hero-->
+        <section id="home" class="hero">
+            <div id="carousel" class="carousel">
+                <!--Slide 1-->
+                <div class="carousel-slide active">
+                    <img src="./gif/0523(1).gif" alt="Programação" class="carousel-bg">
+                    <div class="carousel-content container">
+                        <h1>Design Moderno e Inovador</h1>
+                        
+                        <a href="#cursos" class="btn btn-primary">
+                            Ver Informações</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./gif/0523.gif" alt="Equipe" class="carousel-bg">
+                    <div class="carousel-content container">
+                        <h1>Conheça o Profissionalismo</h1>
+                        
+                        <a href="#contato" class="btn btn-primary">
+                            Ver Informações</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" id="btn-prev">
+            </button>
+            <button class="carousel-control next" id="btn-next">
+            </button>
+        </section>
+        <!-- Seção: CURSOS -->
+        <section id="cursos" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossas Construções</h2>
+                    <div class="line"></div>
+                    <p>Todos os tipos de ideias podem ser transformadas em realidade.
+                    </p>
+                </div>
+                <div class="grid grid-cards">
+
+                    <article class="card">
+                        <img src="./gif/castelo.gif" class="card-img">
+
+                        <div class="hover-text">
+                            <h3>Castelo Sombrio</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="card">
+                        <img src="./gif/casa_branca.gif" class="card-img">
+                        
+                        <div class="hover-text">
+                            <h3>Casa Branca</h3>
+                        </div>
+
+                    </article>
+                    <article class="card">
+                        <img src="./gif/steve_liberdade.gif" class="card-img">
+
+                        <div class="hover-text">
+                            <h3>Steve da Liberdade</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--Números-->
+
+        <section id="numeros" class="section stats-section">
+            <div class="container">
+                <div class="section-title title-light">
+                    <h2>Status de Atendimento</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="grid grid-stats">
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="87">0</span>
+                        <p>Construções Finalizadas</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="35">0</span>
+                        <p>Clientes Atendidos</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="5">0</span>
+                        <p>Obras em Andamento</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="25">0</span>
+                        <p>Empresas Parceiras</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--SEÇÃO DE NOTÍCIAS E EVENTOS-->
+        <!--Seção dividida em duas grandes colunas-->
+        <section id="noticias-eventos" class="section">
+            <div class="container grid dual-layout">
+                <!--Coluna 1: Notícias-->
+                <div class="news-container" id="eventos">
+                    <h3 class="box-title">Maiores Construções</h3>
+                    <!--Notícia 1-->
+                    <article class="news-item">
+                        <img src="./img/havan.png" alt="Curso PWEB" class="news-img">
+                        <div class="news-text">
+                            <h4>Lojas HAVAN contrata nova construtora</h4>
+                            <span class="news-date">11 de maio, 2026</span>
+                            <p>Véio da HAVAN contrata empresa renomada Minecraft Construcion para fazer nova loja em Minecity.</p>
+                        </div>
+                    </article>
+                    <!--Notícia 2-->
+                    <article class="news-item">
+                        <img src="img/tower_stark.png" alt="Laboratório" class="news-img">
+                        <div class="news-text">
+                            <h4>A torre dos Vingadores</h4>
+                            <span class="news-date">11 de maio, 2026</span>
+                            <p>Tonny Stark contrata Minecraft Construcion para projeto da torre dos Vingadores.</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <!--Seção Contato-->
+        <section class="section bg-alt" id="contato">
+            <div class="container grid contact-layout">
+                <div class="contact-info">
+                    <h2>Ficou com Dúvidas?</h2>
+                    <p>Nossa equipe comercial está pronta para respondê-las.
+                    </p>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-envelope-simple"></i>
+                        minecronstruction@.gmail.com
+                        </li>
+                        <li><i class="ph ph-phone"></i>
+                        (47) 4002-8922                        </li>
+                        <li><i class="ph ph-buildings"></i>
+                        Av. Aldeão, n° 13 - Minecity
+                        </li>
+                    </ul>
+                    
+                    <h4>Acompanhe também</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/stevegamermalikoski/"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://www.linkedin.com/in/mateus-malikoski-45591239a/"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="https://github.com/SteveGamer13"><i class="ph ph-github-logo"></i></a>
+                        <a href="https://www.youtube.com/@SteveGamer_13"><i class="ph ph-youtube-logo"></i></a>
+                    </div>
+                    <div class="social-col">
+                   
+                </div>
+            </div>
+                
+                <div class="contact-form">
+                    <form onsubmit="return false;">
+                        <div class="input-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" placeholder="Seu nome completo">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="seu.melhor@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="msg">Mensagem</label>
+                            <textarea id="msg" rows="4" placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 MinecraftConstrution. Todos os direitos reservados. 
+                Desenvolvedor: SteveGamerM13</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
