@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     function runAutoPlay(){
         autoPlayTimer = setInterval(()=> {
             showTargetSlide(currentSlide+1);
-        }, 7000);
+        }, 6000);
     }
 
     //Ações dos botões
@@ -125,4 +125,36 @@ document.addEventListener('DOMContentLoaded',()=>{
    counters.forEach(counterItem => {
     scrollObserver.observe(counterItem);
    });
+
+   //Dark-mode e Light Mode
+   /*Selecionar o botão que faz a troca*/
+   const themeBtn = document.getElementById('theme-toggle');
+   /*Selecionar o ícone para troca*/
+   const themeIcon = themeBtn.querySelector('i'); 
+
+   //Recuperar tema salvo anteriormente
+   const currentTheme = localStorage.getItem('theme');
+   if (currentTheme === 'dark'){
+        document.body.classList.add('dark-mode');
+        themeIcon.classList.replace('ph-moon','ph-sun');
+   }
+
+
+   //Adiciona o evento no botão
+   themeBtn.addEventListener('click',()=> {
+    //Liga a classe quando está desligada e desliga quando está ligada
+    document.body.classList.toggle('dark-mode');
+    //Verifica se está no darkmode (true) ou não (false)
+    const isDark = document.body.classList.contains('dark-mode');
+
+    if (isDark){
+        themeIcon.classList.replace('ph-moon','ph-sun');
+        localStorage.setItem('theme','light');
+    } else {
+        themeIcon.classList.replace('ph-sun','ph-moon');
+        localStorage.setItem('theme','dark');
+    }
+
+   });
+
 });
