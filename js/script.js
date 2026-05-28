@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded',()=>{
    const currentTheme = localStorage.getItem('theme');
    if (currentTheme === 'dark'){
         document.body.classList.add('dark-mode');
-        themeIcon.classList.replace('ph-moon','ph-sun');
+        themeIcon.classList.replace('ph-sun','ph-moon');
    }
 
 
@@ -148,11 +148,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     const isDark = document.body.classList.contains('dark-mode');
 
     if (isDark){
-        themeIcon.classList.replace('ph-moon','ph-sun');
-        localStorage.setItem('theme','light');
-    } else {
         themeIcon.classList.replace('ph-sun','ph-moon');
         localStorage.setItem('theme','dark');
+    } else {
+        themeIcon.classList.replace('ph-moon','ph-sun');
+        localStorage.setItem('theme','ligth');
     }
 
    });
